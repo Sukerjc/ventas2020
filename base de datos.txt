@@ -1,0 +1,12 @@
+create database ventas2020
+use  ventas2020
+
+create table producto(
+id int(11) auto_increment,
+nombre_producto varchar(150) default null,
+precio_producto double default null,
+stock_producto int default null,
+primary key (id));
+
+insert into producto values ('1','pantalon','50','100')
+select * from producto
